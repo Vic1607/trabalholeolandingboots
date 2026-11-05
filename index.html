@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tokyo Fest 2026 | O Maior Evento de Anime</title>
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top border-bottom border-danger">
+        <div class="container">
+            <a class="navbar-brand text-danger" href="#inicio">TOKYO<span class="text-white">FEST</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Atrações</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Imagens</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+                <a href="cadastro.html" class="btn btn-danger ms-lg-3 text-uppercase fw-bold btn-sm py-2 px-3">Inscreva-se</a>
+                <button id="btnTema" class="btn btn-outline-danger ms-lg-2">Modo claro</button>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero text-center text-white d-flex align-items-center">
+        <div class="container bg-dark bg-opacity-70 p-5 rounded-4 border border-danger shadow-lg">
+            <h1 class="display-3 fw-bold text-uppercase">Tokyo Fest 2026</h1>
+            <p class="lead">Prepare seu cosplay e viva o ápice da cultura otaku no Brasil.</p>
+            <a href="cadastro.html" class="btn btn-danger btn-lg px-5 mt-3 text-uppercase fw-bold">Garantir Vaga</a>
+        </div>
+    </header>
+
+    <section class="py-4 text-center bg-black border-bottom border-danger">
+        <div class="container">
+            <h2 class="h5 text-uppercase tracking-widest text-danger">Os portões se abrem em:</h2>
+            <p id="contagem" class="display-6 fw-bold mb-0 text-white"></p>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-5 bg-dark">
+        <div class="container">
+            <h2 class="text-center mb-5 text-uppercase">Cronograma de Atrações</h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 bg-black border-secondary">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title text-danger">Concurso Cosplay</h5>
+                                <p class="card-text text-body-secondary">Desfile no palco principal com premiações em dinheiro para as categorias Pro e Desfile.</p>
+                            </div>
+                            <button class="btn btn-outline-danger w-100 mt-3" data-bs-toggle="modal" data-bs-target="#modalCosplay">Regras do Concurso</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 bg-black border-secondary">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title text-danger">Arena E-Sports</h5>
+                                <p class="card-text text-body-secondary">Torneios livres de Fighting Games, setups de última geração e convidados do cenário competitivo.</p>
+                            </div>
+                            <button class="btn btn-outline-danger w-100 mt-3" data-bs-toggle="modal" data-bs-target="#modalGames">Jogos Disponíveis</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 bg-black border-secondary">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title text-danger">Beco dos Artistas</h5>
+                                <p class="card-text text-body-secondary">Mais de 50 ilustradores, quadrinistas e escritores independentes vendendo suas artes exclusivas.</p>
+                            </div>
+                            <button class="btn btn-outline-danger w-100 mt-3" data-bs-toggle="modal" data-bs-target="#modalArtistas">Artistas Confirmados</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="modalCosplay" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark border-danger text-white">
+                <div class="modal-header border-danger">
+                    <h5 class="modal-title">Inscrições Cosplay</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    As vagas presenciais abrem duas horas antes do desfile no balcão central. Traga o áudio da sua performance em um pendrive formato MP3.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalGames" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark border-danger text-white">
+                <div class="modal-header border-danger">
+                    <h5 class="modal-title">Torneios de Games</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Teremos competições oficiais de Street Fighter 6, Guilty Gear Strive e Tekken 8. Inscrições gratuitas feitas diretamente na arena gamer.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalArtistas" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark border-danger text-white">
+                <div class="modal-header border-danger">
+                    <h5 class="modal-title">Artist's Alley</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    O mapa com a localização exata de cada mesa e a lista completa com as redes sociais de todos os artistas participantes será enviado por e-mail na semana do evento.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="galeria" class="py-5 bg-black">
+        <div class="container">
+            <h2 class="text-center mb-5 text-uppercase">Edições Anteriores</h2>
+            <div id="meuCarousel" class="carousel slide border border-secondary rounded-3 overflow-hidden" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/foto1.jpg" class="d-block w-100" alt="Cosplays no palco principal">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/foto2.jpg" class="d-block w-100" alt="Público jogando na arena gamer">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/foto3.jpg" class="d-block w-100" alt="Estandes de produtos colecionáveis">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#meuCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#meuCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-5 bg-dark">
+        <div class="container" style="max-width: 600px;">
+            <h2 class="text-center mb-4 text-uppercase">Fique por Dentro</h2>
+            <form id="formContato" novalidate class="bg-black p-4 rounded-4 border border-secondary shadow">
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome Completo</label>
+                    <input type="text" id="nome" class="form-control bg-dark text-white border-secondary" required>
+                    <div class="invalid-feedback">O preenchimento do nome é obrigatório.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" id="email" class="form-control bg-dark text-white border-secondary" required>
+                    <div class="invalid-feedback">Insira um endereço de e-mail válido.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="msg" class="form-label">Dúvidas ou Sugestões</label>
+                    <textarea id="msg" class="form-control bg-dark text-white border-secondary" rows="4" required></textarea>
